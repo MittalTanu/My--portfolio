@@ -22,6 +22,7 @@
       <li><a href="#key-competencies" class="nav-link">Skills</a></li>
       <li><a href="#what-i-bring" class="nav-link">About me</a></li>
       <li><a href="#timeline" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
       <li><a href="#featured-posts" class="nav-link">Featured</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -45,7 +46,7 @@
     
     <div class="hero-buttons">
     <a class="btn btn-primary" href="#contact">Get In Touch</a>
-    <a class="btn btn-outline" href="Tanumittal2025.pdf" target="_blank" rel="noopener noreferrer">
+    <a class="btn btn-outline" href="assets/Tanumittal2025.pdf" target="_blank" rel="noopener noreferrer">
       Download Resume
     </a>
   </div>
@@ -320,6 +321,67 @@
   </div>
 </section>
 
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Key Projects & Initiatives</h2>
+
+    <!-- Project 1 -->
+    <div class="project-card" onclick="toggleProject('project1')">
+      <h3>Eday-Care App – From Zero to Pilot Launch <span class="toggle-btn">more</span></h3>
+      <div id="project1" class="project-content">
+        <p><strong>Role:</strong> Lead Product Owner – Cross-functional Demo & Launch</p>
+        <p><strong>Team Size:</strong> Engineering team of 8</p>
+        <p><strong>Markets Covered:</strong> EU & Nordics</p>
+        <p><strong>Impact:</strong> Took ownership from ideation to live product, leading user research, backlog prioritization, and technical requirements. Successfully launched a pilot with a leading international kindergarten in Stockholm, streamlining teacher-guardian communication and operational workflows. Delivered measurable efficiency gains and validated product-market fit within the first year.</p>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card" onclick="toggleProject('project2')">
+      <h3>Connected Hob Digital Experience – Discovery & Roadmapping <span class="toggle-btn">more</span></h3>
+      <div id="project2" class="project-content">
+        <p><strong>Role:</strong> Product Strategist & Presenter</p>
+        <p><strong>Team Size:</strong> 3 mobile dev teams, 5 cross-functional stakeholders</p>
+        <p><strong>Markets Covered:</strong> EU</p>
+        <p><strong>Impact:</strong> Spearheaded product discovery and ideation for IoT-enabled cooktops and hoods, defining 10+ high-value digital experiences. Aligned roadmap priorities and secured cross-market buy-in, enabling fast-tracked future implementation. Improved engagement tracking and adoption metrics through performance dashboards, demonstrating immediate strategic value.</p>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card" onclick="toggleProject('project3')">
+      <h3>First IoT-Enabled Hood Integration with App – Risk-Reducing Launch <span class="toggle-btn">more</span></h3>
+      <div id="project3" class="project-content">
+        <p><strong>Role:</strong> Product Manager – GTM & Feature Validation</p>
+        <p><strong>Team Size:</strong> 3 mobile dev teams, 5 cross-functional stakeholders</p>
+        <p><strong>Markets Covered:</strong> EU</p>
+        <p><strong>Impact:</strong> Drove ideation to launch for the first connected hood, aligning hardware, mobile, and business stakeholders to reduce rollout risk. Influenced roadmap prioritization, validated features early, and accelerated decision-making, resulting in a smooth market introduction and actionable learnings for future IoT product lines.</p>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card" onclick="toggleProject('project4')">
+      <h3>Process Improvement & Product Community of Practice Workshops – Driving Alignment & Efficiency <span class="toggle-btn">more</span></h3>
+      <div id="project4" class="project-content">
+        <p><strong>Role:</strong> Facilitator & Coach</p>
+        <p><strong>Team Size:</strong> 12 PMs, Engineering Managers and Leads</p>
+        <p><strong>Markets Covered:</strong> Global internal stakeholders</p>
+        <p><strong>Impact:</strong> Led cross-functional workshops to identify process gaps, streamline opportunity assessment, and improve roadmap prioritization by 40%. Built alignment across global PM teams and fostered a culture of continuous improvement. Empowered team members to escalate issues proactively and drive faster, data-informed decision-making, increasing overall delivery impact and strategic clarity.</p>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project-card" onclick="toggleProject('project5')">
+      <h3>Internal Champion & Strategic Storytelling – Driving Alignment & Influence <span class="toggle-btn">more</span></h3>
+      <div id="project5" class="project-content">
+        <p><strong>Role:</strong> Product Promoter & Influencer</p>
+        <p><strong>Team Size:</strong> Cross-functional teams including PMs, Engineers, UX, Hardware, and Leadership</p>
+        <p><strong>Markets Covered:</strong> Global internal stakeholders</p>
+        <p><strong>Impact:</strong> Led demos, concept presentations, quarterly business reports, and outcome-impact presentations to influence decisions across leadership, teams, and departments. Translated complex product initiatives into compelling narratives, using data and user feedback to build alignment, maintain excitement, and drive adoption of strategic priorities. Recognized for creating clarity, generating enthusiasm, and securing cross-functional buy-in for initiatives across multiple product areas.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 
@@ -505,6 +567,14 @@
   });
 </script>
 </section>
+<script>
+  function toggleProject(id) {
+    const content = document.getElementById(id);
+    const isOpen = content.style.display === "block";
+    content.style.display = isOpen ? "none" : "block";
+  }
+</script>
+</body>
 
 
 <footer class="site-footer">
@@ -514,6 +584,7 @@
 </footer>
 
 </body>
+
 <script>
   // Smooth scroll is already handled by CSS scroll-behavior: smooth
   
@@ -542,4 +613,3 @@
   </script>
   
 </html>
-
